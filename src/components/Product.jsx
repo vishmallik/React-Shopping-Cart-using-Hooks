@@ -3,7 +3,10 @@ import React from "react";
 export default function Product({ addToCart, product }) {
   return (
     <li>
-      <img src={`/static/products/${product.sku}_1.jpg`} alt="" />
+      <img
+        src={`./React-Shopping-Cart-using-Hooks/static/products/${product.sku}_1.jpg`}
+        alt=""
+      />
       <h2>{product.title}</h2>
       <hr />
       <div>
