@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/React-Shopping-Cart-using-Hooks/static/css/main.9c2405ca.css",
-    "main.js": "/React-Shopping-Cart-using-Hooks/static/js/main.5d49bfca.js",
-    "index.html": "/React-Shopping-Cart-using-Hooks/index.html",
-    "main.9c2405ca.css.map": "/React-Shopping-Cart-using-Hooks/static/css/main.9c2405ca.css.map",
-    "main.5d49bfca.js.map": "/React-Shopping-Cart-using-Hooks/static/js/main.5d49bfca.js.map"
+    "main.css": "/static/css/main.9c2405ca.css",
+    "main.js": "/static/js/main.5d49bfca.js",
+    "index.html": "/index.html",
+    "main.9c2405ca.css.map": "/static/css/main.9c2405ca.css.map",
+    "main.5d49bfca.js.map": "/static/js/main.5d49bfca.js.map"
   },
   "entrypoints": [
     "static/css/main.9c2405ca.css",
