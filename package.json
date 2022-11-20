@@ -1,7 +1,8 @@
 {
   "name": "react_shopping_cart_using_hooks",
   "version": "0.1.0",
-  "homepage": "https://vishmallik.github.io",
+  "homepage": "https://vishmallik.github.io/React-Shopping-Cart-using-Hooks",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
