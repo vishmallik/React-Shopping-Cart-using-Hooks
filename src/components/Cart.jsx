@@ -12,10 +12,7 @@ export default function Cart({ dec, del, inc, products }) {
         <div>
           <div className="cart-icon-wrapper">
             <div>
-              <img
-                src="./React-Shopping-Cart-using-Hooks/static/bag-icon.png"
-                alt="cart"
-              />
+              <img src="./static/bag-icon.png" alt="cart" />
               <span>
                 {products.reduce((acc, cv) => {
                   acc = acc + cv.quantity;
@@ -34,10 +31,7 @@ export default function Cart({ dec, del, inc, products }) {
                     className="fas fa-xmark delete-item"
                     onClick={() => del(product.id)}
                   ></i>
-                  <img
-                    src={`./React-Shopping-Cart-using-Hooks/static/products/${product.sku}_2.jpg`}
-                    alt=""
-                  />
+                  <img src={`./static/products/${product.sku}_2.jpg`} alt="" />
                   <div className="product-details">
                     <p>{product.title}</p>
                     <span>
@@ -76,10 +70,7 @@ export default function Cart({ dec, del, inc, products }) {
         htmlFor="cart"
         onClick={() => setIsOpen(true)}
       >
-        <img
-          src="./React-Shopping-Cart-using-Hooks/static/bag-icon.png"
-          alt="cart"
-        />
+        <img src="./static/bag-icon.png" alt="cart" />
         <span>
           {products.reduce((acc, cv) => {
             acc = acc + cv.quantity;
