@@ -6,7 +6,7 @@ import data from "../data.json";
 
 export default function App() {
   let [cartItems, setCartItems] = useState(
-    JSON.parse(localStorage.carts) || []
+    (localStorage.carts && JSON.parse(localStorage.carts)) || []
   );
   let [sizes, setSizes] = useState([]);
 
