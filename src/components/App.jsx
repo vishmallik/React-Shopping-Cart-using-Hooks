@@ -15,7 +15,7 @@ export default function App() {
     return () => {
       window.removeEventListener("beforeunload", handleUpdateLocalStorage);
     };
-  });
+  }, []);
 
   function handleUpdateLocalStorage() {
     localStorage.setItem("carts", JSON.stringify(cartItems));
