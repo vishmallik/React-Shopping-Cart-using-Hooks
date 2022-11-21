@@ -12,6 +12,9 @@ export default function App() {
 
   useEffect(() => {
     window.addEventListener("beforeunload", handleUpdateLocalStorage);
+    return () => {
+      window.removeEventListener("beforeunload", handleUpdateLocalStorage);
+    };
   });
 
   function handleUpdateLocalStorage() {
