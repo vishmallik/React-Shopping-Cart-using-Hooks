@@ -5,21 +5,17 @@ import Aside from "./Aside";
 import data from "../data.json";
 
 export default function App() {
-  let [cartItems, setCartItems] = useState(
-    (localStorage.carts && JSON.parse(localStorage.carts)) || []
-  );
+  let [cartItems, setCartItems] = useState(() => {
+    return (
+      (localStorage.carts && JSON.parse(localStorage.getItem("carts"))) || []
+    );
+  });
   let [sizes, setSizes] = useState([]);
 
   useEffect(() => {
-    window.addEventListener("beforeunload", handleUpdateLocalStorage);
-    return () => {
-      window.removeEventListener("beforeunload", handleUpdateLocalStorage);
-    };
-  }, []);
-
-  function handleUpdateLocalStorage() {
     localStorage.setItem("carts", JSON.stringify(cartItems));
-  }
+  }, [cartItems]);
+
   function addToCart(product) {
     let present = cartItems.find((p) => p.id === product.id);
     if (present) {
