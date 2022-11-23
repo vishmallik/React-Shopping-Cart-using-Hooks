@@ -3,6 +3,7 @@ import Cart from "./Cart";
 import Products from "./Products";
 import Aside from "./Aside";
 import data from "../data.json";
+import Footer from "./Footer";
 
 export default function App() {
   let [cartItems, setCartItems] = useState(() => {
@@ -82,6 +83,7 @@ export default function App() {
         dec={decQuantity}
         del={deleteItem}
       />
+      <Footer />
     </>
   );
 }
