@@ -1,6 +1,6 @@
 # 🛍️ Simple e-commerce cart application
 
-An open, extensible, platform for github users to track top repositories of various programming languages.
+A Simple shopping cart application made using react where people can sort items according to sizes and price and can add itmes to cart.
 
 ## Badges
 
